@@ -27,9 +27,6 @@ export default function Navbar() {
           <span className="font-black text-3xl tracking-tighter text-accent transition-transform group-hover:scale-105">
             RM<span className="text-accent">.</span>
           </span>
-          <span className="hidden sm:inline-block font-mono text-lg font-semibold text-secondary tracking-tight">
-            Ryan Musuka
-          </span>
         </Link>
 
         {/* Desktop Navigation (Hidden on Mobile) */}
