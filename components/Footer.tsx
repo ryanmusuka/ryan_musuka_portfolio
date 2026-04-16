@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
 
       {/* Terminal Divider & Copyright */}
-      <div className="container mx-auto max-w-7xl mt-12 pt-8 border-t border-dashed border-slate-800 flex flex-col md:flex-row justify-center items-center gap-2 text-xs text-slate-500 font-medium text-center">
+      <div className="container mx-auto max-w-7xl mt-12 border-t border-dashed border-slate-800 flex flex-col md:flex-row justify-center items-center gap-2 text-xs text-slate-500 font-medium text-center">
         <p>
           Portfolio &copy; {currentYear}
         </p>
