@@ -83,11 +83,11 @@ export default function BlogLandingPage() {
   }
 
   return (
-    <main className="min-h-screen bg-transparent pt-12 pb-20 px-4 sm:px-6 lg:px-8 min-h-[90vh] relative z-10">
+    <main className="min-h-screen bg-transparent pt-28 pb-20 px-4 sm:px-6 lg:px-8 min-h-[90vh] relative z-10">
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
-        <header className="flex flex-col md:flex-row md:items-end justify-between border-b border-dashed border-slate-700 pb-8 mb-12 gap-6">
+        <header className="flex scroll-mt-20 flex-col md:flex-row md:items-end justify-between border-b border-dashed border-slate-700 pb-8 mb-12 gap-6">
           <div>
             <div className="flex items-center space-x-3 mb-4">
               

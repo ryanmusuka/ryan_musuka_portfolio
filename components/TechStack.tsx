@@ -26,7 +26,7 @@ const technologies = {
 
 export default function TechStack() {
   return (
-    <section id="stack" className="w-full container mx-auto px-4 sm:px-6 lg:px-8 py-1 relative z-10">
+    <section id="stack" className="w-full scroll-mt-20 container mx-auto px-4 sm:px-6 lg:px-8 py-1 relative z-10">
       <motion.div 
         className="max-w-6xl mx-auto"
         initial={{ opacity: 0, y: 30 }}

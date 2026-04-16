@@ -60,7 +60,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="w-full container mx-auto px-4 sm:px-6 lg:px-8 py-4 relative z-10">
+    <section id="contact" className="w-full scroll-mt-20 container mx-auto px-4 sm:px-6 lg:px-8 py-4 relative z-10">
       <motion.div
         className="max-w-4xl mx-auto"
         initial="hidden"

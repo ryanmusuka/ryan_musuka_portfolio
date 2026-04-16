@@ -14,8 +14,8 @@ import {
 export default function Navbar() {
   const routes = [
     { name: "About", href: "/#about" },
-    { name: "Skills", href: "/#stack" },
     { name: "Projects", href: "/#projects" },
+    { name: "Skills", href: "/#stack" },
     { name: "Blog", href: "/blog" },
   ];
 

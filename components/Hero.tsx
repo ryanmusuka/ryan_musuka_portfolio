@@ -127,7 +127,7 @@ export default function Hero() {
                     </Link>
                 </Button>
                 
-                <Button asChild variant="outline" className="border-terminal text-terminal hover:bg-terminal/10 font-mono font-bold px-8 py-6 rounded-full transition-all group">
+                <Button asChild variant="outline" className="border-terminal text-terminal hover:bg-terminal/10 font-mono font-bold px-8 rounded-full transition-all group">
                     <a href="/Ryan_Musuka_CV.pdf" download="Ryan_Musuka_CV.pdf">
                     Download My Resume
                     </a>
