@@ -58,10 +58,10 @@ export default function About() {
           {/* The Narrative Content */}
           <article className="space-y-6 text-base md:text-lg text-slate-300 leading-relaxed font-sans w-full">
             <p>
-              I am a Computer Science student at NUST Zimbabwe, completing my second year with a deep-rooted obsession for building resilient systems on the internet.
+              I am a Computer Science student at NUST Zimbabwe, completing my second year with a deep-rooted passion for building resilient systems on the internet.
             </p>
             <p>
-              So far, I have shipped a production media platform (LaughNewsWorld), led a 10-person IoT engineering team to build a smart irrigation system (Hydro-Smart), and prototyped an offline-first traffic enforcement application for active-duty police officers (Zentinel). Each of these systems taught me crucial lessons about database design, payload optimization, and real-world network constraints that the classroom simply cannot simulate.
+              So far, I have shipped a production media platform (LaughNewsWorld), led a 10-person IoT engineering team to build a smart irrigation system (Hydro-Smart), and prototyped two future enterprise systems; an offline-first traffic enforcement application for active-duty police officers (Zentinel) and an enterprise visitor management platform (SentriHawk). Each of these systems taught me crucial lessons about database design, payload optimization, and real-world network constraints that the classroom simply cannot simulate.
             </p>
             <p>
               To deeply understand the infrastructure my code runs on, I pursued and achieved dual Oracle certifications in Cloud Infrastructure and Generative AI. Currently, I am diving even deeper into Next.js, TypeScript, PostgreSQL, and cloud architecture, chasing the intersection where artificial intelligence meets practical software engineering.

@@ -67,7 +67,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="flex flex-col items-center justify-center gap-6 max-w-3xl mx-auto px-4 py-12 text-center"
+      className="flex flex-col scroll-mt-24 items-center justify-center gap-6 max-w-3xl mx-auto px-4 py-12 text-center"
       >
       
       {/* Left Column: Information & CTAs */}

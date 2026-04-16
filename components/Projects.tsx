@@ -31,31 +31,6 @@ const projects = [
     repoLink: "https://github.com/ryanmusuka/LaughNewsWorld-Website", 
   },
   {
-    id: "zentinel",
-    title: "Zentinel",
-    tagline: "Traffic Police Enforcement Application",
-    description: "A ruggedized digital law enforcement platform designed to centralize physical vehicle inspections. Features an offline-capable ticketing engine that generates official digital receipts to expedite high-stress traffic stops.",
-    stack: ["Next.js", "React", "TypeScript", "Tailwind"],
-    status: "Prototype Deployed. Final System in Active Development",
-    featuresLabel: "Core Features",
-    features: [
-      "Offline-Ready Architecture",
-      "Ruggedized UI/UX for High-Glare Outdoor Visibility",
-      "Automated Ticketing Engine with Statutory Cross-Referencing",
-      "Generates Digital 'Form 265' Receipts",
-      "Task-Isolated Workflows (Inspection vs. Administration)",
-      "Immutable Logging"
-    ],
-    achievements: [
-      "Architected a secure global session management system using React Context API to act as an [[immutable clipboard]] across routes.",
-      "Engineered an [[offline-ready frontend]] simulating national registry lookups during severe network outages.",
-      "Developed dynamic ticketing logic that automatically cross-references defects against government fine schedules.",
-      "Demo Access: Badge No.: 9921 | Password: password123"
-    ],
-    demoLink: "https://zentinel-mvp-prototype.vercel.app",
-    repoLink: "https://github.com/ryanmusuka/Zentinel-MVP-Prototype-", 
-  },
-  {
     id: "sentrihawk",
     title: "SentriHawk",
     tagline: " Enterprise Visitor Management & Security Platform",
@@ -81,6 +56,31 @@ const projects = [
     ],
     demoLink: "https://sentrihawk-prototype.vercel.app",
     repoLink: "https://github.com/ryanmusuka/SentriHawk_Prototype",
+  },
+  {
+    id: "zentinel",
+    title: "Zentinel",
+    tagline: "Traffic Police Enforcement Application",
+    description: "A ruggedized digital law enforcement platform designed to centralize physical vehicle inspections. Features an offline-capable ticketing engine that generates official digital receipts to expedite high-stress traffic stops.",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind"],
+    status: "Prototype Deployed. Final System in Active Development",
+    featuresLabel: "Core Features",
+    features: [
+      "Offline-Ready Architecture",
+      "Ruggedized UI/UX for High-Glare Outdoor Visibility",
+      "Automated Ticketing Engine with Statutory Cross-Referencing",
+      "Generates Digital 'Form 265' Receipts",
+      "Task-Isolated Workflows (Inspection vs. Administration)",
+      "Immutable Logging"
+    ],
+    achievements: [
+      "Architected a secure global session management system using React Context API to act as an [[immutable clipboard]] across routes.",
+      "Engineered an [[offline-ready frontend]] simulating national registry lookups during severe network outages.",
+      "Developed dynamic ticketing logic that automatically cross-references defects against government fine schedules.",
+      "Demo Access: Badge No.: 9921 | Password: password123"
+    ],
+    demoLink: "https://zentinel-mvp-prototype.vercel.app",
+    repoLink: "https://github.com/ryanmusuka/Zentinel-MVP-Prototype-", 
   },
   {
     id: "hydrosmart",
