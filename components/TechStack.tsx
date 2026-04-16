@@ -7,26 +7,26 @@ const technologies = {
   frontend: [
     { name: "Next.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", invertDark: true },
     { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", invertDark: false },
-    { name: "TypeScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", invertDark: false },
     { name: "Tailwind", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", invertDark: false },
     { name: "Flutter", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg", invertDark: false },
   ],
   backend: [
     { name: "Supabase", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg", invertDark: false },
     { name: "PostgreSQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", invertDark: false },
-    { name: "Python", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", invertDark: false },
-    { name: "SQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg", invertDark: false },
-  ],
+   ],
   core: [
+    { name: "TypeScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", invertDark: false },
     { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", invertDark: false },
     { name: "HTML5", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", invertDark: false },
     { name: "CSS3", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", invertDark: false },
-   ]
+    { name: "Python", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", invertDark: false },
+    { name: "SQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg", invertDark: false }
+  ]
 };
 
 export default function TechStack() {
   return (
-    <section id="stack" className="w-full container mx-auto px-4 sm:px-6 lg:px-8 py-6 relative z-10">
+    <section id="stack" className="w-full container mx-auto px-4 sm:px-6 lg:px-8 py-1 relative z-10">
       <motion.div 
         className="max-w-6xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
@@ -35,7 +35,7 @@ export default function TechStack() {
         transition={{ duration: 0.6 }}
       >
         {/* Section Header */}
-        <div className="flex items-center space-x-3 mb-10">
+        <div className="flex items-center space-x-3 mb-8">
           <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight font-mono uppercase">
             Tech<span className="text-accent">Stack</span>
           </h2>
@@ -53,7 +53,7 @@ export default function TechStack() {
             whileHover={{ y: -5 }}
             >
             <div className="flex items-center space-x-3 mb-6">
-              <Terminal className="w-5 h-5 text-accent" />
+              <Terminal className="w-5 h-5 text-terminal" />
               <h3 className="text-xl font-mono font-bold text-white">Core Languages</h3>
             </div>
             <div className="grid grid-cols-4 lg:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-x-2">

@@ -14,7 +14,7 @@ import {
 export default function Navbar() {
   const routes = [
     { name: "About", href: "/#about" },
-    { name: "Education", href: "/#education" },
+    { name: "Skills", href: "/#stack" },
     { name: "Projects", href: "/#projects" },
     { name: "Blog", href: "/blog" },
   ];
@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-slate-800/50 bg-[#0f172a]/80 backdrop-blur-md supports-[backdrop-filter]:bg-[#0f172a]/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex h-20 items-center justify-between">
         
-        <Link href="/" className="flex items-baseline space-x-2 group">
+        <Link href="/#hero" className="flex items-baseline space-x-2 group">
           <span className="font-black text-3xl tracking-tighter text-accent transition-transform group-hover:scale-105">
             RM<span className="text-accent">.</span>
           </span>

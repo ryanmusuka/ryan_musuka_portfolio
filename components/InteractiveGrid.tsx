@@ -6,8 +6,6 @@ export default function InteractiveGrid() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    // We do not strictly need lodash throttle here if we rely on requestAnimationFrame 
-    // for high-performance, jank-free rendering.
     const handleMouseMove = (e: MouseEvent) => {
       requestAnimationFrame(() => {
         setMousePos({ x: e.clientX, y: e.clientY });

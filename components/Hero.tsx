@@ -2,7 +2,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { easeOut } from "framer-motion";
@@ -54,7 +53,7 @@ export default function Hero() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15, // Cascades the animations of children elements
+        staggerChildren: 0.15,
         delayChildren: 0.2,
       },
     },

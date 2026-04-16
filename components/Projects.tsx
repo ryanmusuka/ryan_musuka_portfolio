@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FolderGit2, ExternalLink, GitBranch, X, Activity, CheckCircle2, ChevronRight } from "lucide-react";
 
-// 1. DATA ARCHITECTURE: Curated, concise, and separated.
-// We use [[...]] to denote text that should be highlighted with our neon parser.
 const projects = [
   {
     id: "laughnewsworld",
@@ -87,7 +85,7 @@ const projects = [
   {
     id: "hydrosmart",
     title: "Hydro-Smart",
-    tagline: "IoT Precision Irrigation",
+    tagline: "IoT-Based Precision Irrigation System",
     description: "A comprehensive IoT precision irrigation platform that automates crop watering based on real-time soil moisture and weather data. Features a cross-platform mobile application for remote field monitoring.",
     stack: ["ESP32", "C++", "Flutter", "Firebase"],
     status: "MVP Delivered",
@@ -149,11 +147,9 @@ export default function Projects() {
       >
         {/* Section Header */}
         <div className="flex items-center space-x-3 mb-10">
-          <div className="p-2 bg-accent/10 rounded-md border border-accent/30">
-            <FolderGit2 className="w-6 h-6 text-accent" />
-          </div>
+          
           <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight font-mono uppercase">
-            Deployed.<span className="text-terminal">Systems</span>
+            My<span className="text-accent">Projects</span>
           </h2>
         </div>
 

@@ -3,6 +3,7 @@ import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar"; 
 import InteractiveGrid from "@/components/InteractiveGrid"; 
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-fira-code" });
@@ -24,7 +25,7 @@ export default function RootLayout({
         <Navbar />
         <InteractiveGrid />
         {children}
-        
+        <Footer />
       </body>
     </html>
   );
