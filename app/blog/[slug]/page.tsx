@@ -85,10 +85,7 @@ export default async function BlogPost({
               return (
                 <div key={i}>
                   <p>{para}</p>
-                  {/* Ad Injection Strategy: Every 3 paragraphs */}
-                  {(i + 1) % 5 === 0 && (
-                    <SmartAd client="ca-pub-2550346576190821" slot="8345058401" />
-                  )}
+                  
                 </div>
               );
             })}

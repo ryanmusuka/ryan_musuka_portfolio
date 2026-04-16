@@ -139,7 +139,7 @@ export default function Contact() {
 
           {/* Row 3: Message */}
           <div className="space-y-2">
-            <label className="text-md font-mono font-bold uppercase tracking-widest text-slate-400">Message Payload</label>
+            <label className="text-md font-mono font-bold uppercase tracking-widest text-slate-400">Message</label>
             <textarea
               name="message"
               value={formData.message}

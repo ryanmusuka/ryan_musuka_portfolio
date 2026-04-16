@@ -67,7 +67,10 @@ export default function About() {
               To deeply understand the infrastructure my code runs on, I pursued and achieved dual Oracle certifications in Cloud Infrastructure and Generative AI. Currently, I am diving even deeper into Next.js, TypeScript, PostgreSQL, and cloud architecture, chasing the intersection where artificial intelligence meets practical software engineering.
             </p>
              <p>
-                Beyond the IDE, I am an active member of the Google Developer Group and a digital content creator with hands-on experience in YouTube, Photoshop, and video editing. This creative background hones my ability to communicate complex technical concepts effectively and bridges the gap between raw code and engaging user experiences. As a professional, I am a highly determined, rapid learner who thrives in collaborative environments. I bring passion, analytical rigor, and an energetic, team-first mentality to the workplace, ensuring that I am not just writing clean code, but actively contributing to an innovative and enjoyable engineering culture.
+                Beyond the IDE, I am an active member of the Google Developer Group and a digital content creator with hands-on experience in YouTube, Photoshop, and video editing. This creative background hones my ability to communicate complex technical concepts effectively and bridges the gap between raw code and engaging user experiences.
+            </p>
+            <p>
+                As a professional, I am a highly determined, rapid learner who thrives in collaborative environments. I bring passion, analytical rigor, and an energetic, team-first mentality to the workplace, ensuring that I am not just writing clean code, but actively contributing to an innovative and enjoyable engineering culture.
             </p>
           </article>
 
