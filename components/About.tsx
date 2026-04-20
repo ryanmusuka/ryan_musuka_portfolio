@@ -32,7 +32,7 @@ export default function About() {
   return (
     <section 
       id="about" 
-      className="w-full container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10"
+      className="w-full container scroll-mt-20 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10"
     >
       {/* The Flex Parent:  */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
