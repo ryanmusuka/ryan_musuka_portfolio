@@ -20,7 +20,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-800/50 bg-[#0f172a]/80 backdrop-blur-md supports-[backdrop-filter]:bg-[#0f172a]/60">
+    <header className="sticky top-0 z-50 w-full border-b-[3px] border-accent bg-[#0f172a]/80 backdrop-blur-md supports-[backdrop-filter]:bg-[#0f172a]/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex h-20 items-center justify-between">
         
         <Link href="/#hero" className="flex items-baseline space-x-2 group">

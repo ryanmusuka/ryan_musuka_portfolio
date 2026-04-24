@@ -76,18 +76,18 @@ export default function BlogLandingPage() {
       <div className="min-h-screen bg-[#0f172a] flex flex-col items-center justify-center relative z-10">
         <Loader2 className="w-10 h-10 animate-spin text-accent" />
         <p className="mt-4 font-mono uppercase tracking-widest text-slate-500 text-sm animate-pulse">
-          Initializing BLogs...
+          Loading BLogs...
         </p>
       </div>
     );
   }
 
   return (
-    <main className="min-h-screen bg-transparent pt-28 pb-20 px-4 sm:px-6 lg:px-8 min-h-[90vh] relative z-10">
+    <main className="min-h-screen bg-transparent pt-8 pb-20 px-4 sm:px-6 lg:px-8 min-h-[90vh] relative z-10">
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
-        <header className="flex scroll-mt-20 flex-col md:flex-row md:items-end justify-between border-b border-dashed border-slate-700 pb-8 mb-12 gap-6">
+        <header className="flex scroll-mt-20 flex-col md:flex-row md:items-end justify-between border-b border-dashed border-slate-700 pb-8 mb-6 gap-6">
           <div>
             <div className="flex items-center space-x-3 mb-4">
               
@@ -135,7 +135,7 @@ export default function BlogLandingPage() {
                 <Link href={`/blog/${featuredPost.id}`} className="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900/40 border border-slate-800 rounded-2xl p-4 md:p-6 hover:border-accent/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(234,88,12,0.1)]">
                   
                   {/* Image Container */}
-                  <div className="lg:col-span-7 overflow-hidden rounded-xl aspect-video relative border border-slate-800">
+                  <div className="lg:col-span-7 overflow-hidden rounded-xl aspect-[2/1] lg:aspect-video relative border border-slate-800">
                     <img 
                       src={featuredPost.image} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" 
@@ -165,7 +165,7 @@ export default function BlogLandingPage() {
                     </p>
                     
                     <div className="flex items-center text-sm font-bold text-accent pt-2">
-                      Initialize Read <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      Read More <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </Link>
@@ -177,7 +177,7 @@ export default function BlogLandingPage() {
               <section>
                 <div className="flex items-center space-x-2 mb-8 border-b border-slate-800 pb-4">
                   <Activity className="w-5 h-5 text-terminal" />
-                  <h3 className="text-xl font-mono font-bold text-white uppercase tracking-widest">High Traffic Nodes</h3>
+                  <h3 className="text-xl font-mono font-bold text-white uppercase tracking-widest">Trending Pieces</h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                   {trendingPosts.map(post => (
@@ -232,29 +232,29 @@ export default function BlogLandingPage() {
 // ---------------------------------------------------------------------------
 function ArticleCard({ post }: { post: any }) {
   return (
-    <Link href={`/blog/${post.id}`} className="group flex flex-col space-y-4 bg-slate-900/40 border border-slate-800 rounded-2xl p-4 hover:border-terminal/50 hover:shadow-[0_0_30px_rgba(34,197,94,0.1)] transition-all duration-500">
+    <Link href={`/blog/${post.id}`} className="group flex flex-col space-y-3 bg-slate-900/40 border border-slate-800 rounded-2xl p-3 md:p-4 hover:border-terminal/50 hover:shadow-[0_0_30px_rgba(34,197,94,0.1)] transition-all duration-500">
       
-      <div className="aspect-[4/3] overflow-hidden rounded-xl relative border border-slate-800/50">
+      <div className="aspect-[16/9] md:aspect-[4/3] overflow-hidden rounded-xl relative border border-slate-800/50">
         <img src={post.image} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" alt={post.title} />
       </div>
       
-      <div className="space-y-3 flex-grow px-1">
+      <div className="space-y-2 flex-grow px-1">
         <div className="flex justify-between items-center">
-          <span className="text-terminal text-[10px] font-mono border border-terminal/30 bg-terminal/10 px-2 py-0.5 rounded uppercase tracking-widest">
+          <span className="text-terminal text-[9px] font-mono border border-terminal/30 bg-terminal/10 px-1.5 py-0.5 rounded uppercase tracking-widest">
             {post.category}
           </span>
-          <span className="text-slate-500 text-[10px] font-mono">{post.readTime}</span>
+          <span className="text-slate-500 text-[9px] font-mono">{post.readTime}</span>
         </div>
         
-        <h3 className="text-xl font-bold text-slate-200 leading-tight group-hover:text-terminal transition-colors line-clamp-3">
+        <h3 className="text-lg md:text-xl font-bold text-slate-200 leading-tight group-hover:text-terminal transition-colors line-clamp-2 md:line-clamp-3">
           {post.title}
         </h3>
         
-        <p className="text-slate-400 text-sm line-clamp-2">{post.excerpt}</p>
+        <p className="text-slate-400 text-xs md:text-sm line-clamp-2">{post.excerpt}</p>
       </div>
       
-      <div className="px-1 pt-3 border-t border-dashed border-slate-800 flex items-center justify-between">
-        <span className="text-slate-500 font-mono text-[10px]">{post.date}</span>
+      <div className="px-1 pt-2 border-t border-dashed border-slate-800 flex items-center justify-between">
+        <span className="text-slate-500 font-mono text-[9px]">{post.date}</span>
         <span className="text-terminal opacity-0 group-hover:opacity-100 transition-opacity">
           <ChevronRight className="w-4 h-4" />
         </span>

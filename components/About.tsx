@@ -64,7 +64,7 @@ export default function About() {
               So far, I have shipped a production media platform (LaughNewsWorld), led a 10-person IoT engineering team to build a smart irrigation system (Hydro-Smart), and prototyped two future enterprise systems; an offline-first traffic enforcement application for active-duty police officers (Zentinel) and an enterprise visitor management platform (SentriHawk). Each of these systems taught me crucial lessons about database design, payload optimization, and real-world network constraints that the classroom simply cannot simulate.
             </p>
             <p>
-              To deeply understand the infrastructure my code runs on, I pursued and achieved dual Oracle certifications in Cloud Infrastructure and Generative AI. Currently, I am diving even deeper into Next.js, TypeScript, PostgreSQL, and cloud architecture, chasing the intersection where artificial intelligence meets practical software engineering.
+              To deeply understand the infrastructure my code runs on, I pursued and achieved dual Oracle certifications in Cloud Infrastructure and Generative AI. Currently, I am diving even deeper into Python, Next.js, TypeScript, PostgreSQL, and cloud architecture, chasing the intersection where artificial intelligence meets practical software engineering.
             </p>
              <p>
                 Beyond the IDE, I am an active member of the Google Developer Group and a digital content creator with hands-on experience in YouTube, Photoshop, and video editing. This creative background hones my ability to communicate complex technical concepts effectively and bridges the gap between raw code and engaging user experiences.
