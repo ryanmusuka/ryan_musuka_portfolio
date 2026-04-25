@@ -114,6 +114,7 @@ export default function TechStack() {
           <motion.div 
             className="lg:col-span-2 relative p-6 md:p-8 rounded-2xl bg-[#0f172a]/80 border border-slate-800 backdrop-blur-sm group hover:border-accent/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(234,88,12,0.15)] overflow-hidden"
             whileHover={{ y: -5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <div className="flex items-center space-x-3 mb-6">
               <Cloud className="w-5 h-5 text-accent" />
@@ -155,7 +156,7 @@ export default function TechStack() {
             href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=4DDDBDCC90297531C3D128C29EBD1FA4890BB09BE4D09DEA31D35509BC07E5D2"
             target="_blank"
             rel="noopener noreferrer"
-            className="group/cert flex flex-col p-4 rounded-xl bg-slate-900/50 border border-slate-800 border-l-2 border-l-accent sm:col-span-2 hover:bg-accent/10 hover:border-slate-700 transition-all duration-300 cursor-pointer"
+            className="group/cert flex flex-col p-4 rounded-xl bg-slate-900/50 border border-slate-800 border-l-2 border-l-accent sm:col-span-2 hover:bg-accent/10 hover:border-slate-700 transition-all duration-300 cursor-pointer active:scale-95"
             >
             <span className="text-xs font-mono text-slate-400 mb-1 group-hover/cert:text-accent transition-colors duration-300">
                 2025 Certified

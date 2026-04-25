@@ -151,16 +151,17 @@ export default function Contact() {
           </div>
 
           {/* Submit Button */}
-          <button
+          <motion.button
             type="submit"
+            whileTap={{ scale: 0.95 }}
             disabled={status === "loading" || status === "success"}
-            className="w-full flex items-center justify-center space-x-2 bg-accent hover:bg-accent/90 text-white font-bold py-4 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+            className="w-full flex items-center justify-center space-x-2 bg-accent hover:bg-accent/90 hover:scale-95 active:scale-95 text-white font-bold py-4 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed transition-all"
           >
             {status === "idle" && <><Send className="w-5 h-5" /> <span>Send Message</span></>}
             {status === "loading" && <><Loader2 className="w-5 h-5 animate-spin" /> <span>Sending...</span></>}
             {status === "success" && <><CheckCircle2 className="w-5 h-5" /> <span>Sent</span></>}
             {status === "error" && <><AlertCircle className="w-5 h-5" /> <span>Please Retry</span></>}
-          </button>
+          </motion.button>
         </motion.form>
       </motion.div>
     </section>

@@ -154,13 +154,13 @@ export default function Projects() {
         </div>
 
         {/* Grid Container */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full ">
           {projects.map((project) => (
             <motion.div 
               key={project.id}
               onClick={() => setSelectedProject(project)}
               className="group relative flex flex-col p-6 md:p-8 rounded-2xl bg-[#0f172a]/80 backdrop-blur-sm cursor-pointer transition-all duration-500
-                border-2 border-slate-800 hover:border-accent
+                border-2 border-slate-800 hover:border-accent active:scale-95
                 shadow-[0_0_0px_rgba(234,88,12,0)] hover:shadow-[0_0_30px_rgba(234,88,12,0.2)]"
               whileHover={{ y: -5 }}
             >
@@ -221,7 +221,7 @@ export default function Projects() {
                 </div>
                 <button 
                   onClick={() => setSelectedProject(null)}
-                  className="p-2 rounded-lg bg-slate-800/50 hover:bg-slate-700 text-slate-400 hover:text-white transition-all border border-transparent hover:border-slate-500"
+                  className="p-2 rounded-lg bg-slate-800/50 hover:bg-slate-700 text-slate-400 hover:text-white transition-all border border-transparent hover:border-slate-500 active:scale-95"
                 >
                   <X className="w-6 h-6" />
                 </button>
@@ -295,7 +295,7 @@ export default function Projects() {
                   href={selectedProject.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center space-x-2 bg-accent hover:bg-accent/90 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg hover:shadow-accent/20"
+                  className="flex-1 flex items-center justify-center space-x-2 bg-accent hover:bg-accent/90 text-white active:scale-95 font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg hover:shadow-accent/20"
                 >
                   <span>View Live Deployment</span>
                   <ExternalLink className="w-4 h-4" />
@@ -304,7 +304,7 @@ export default function Projects() {
                   href={selectedProject.repoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center space-x-2 bg-transparent hover:bg-slate-800 border-2 border-slate-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all"
+                  className="flex-1 flex items-center justify-center space-x-2 bg-transparent hover:bg-slate-800 active:scale-95 border-2 border-slate-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all"
                 >
                   <GitBranch className="w-4 h-4" /> 
                   <span>View Source Code</span>

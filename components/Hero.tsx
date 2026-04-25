@@ -116,13 +116,13 @@ export default function Hero() {
         {/* Call to Action Buttons */}
         <div className="flex flex-wrap gap-4 items-center">
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 w-fit sm:w-auto">
-                <Button asChild className="bg-accent hover:bg-accent/90 text-white font-mono font-bold px-8 rounded-full transition-all shadow-[0_0_15px_rgba(234,88,12,0.2)] hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(234,88,12,0.4)] group">
+                <Button asChild className="bg-accent hover:bg-accent/90 text-white font-mono font-bold px-8 rounded-full transition-all shadow-[0_0_15px_rgba(234,88,12,0.2)] hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(234,88,12,0.4)] group active:scale-95">
                     <Link href="/#projects">
                     View My Projects 
                     </Link>
                 </Button>
                 
-                <Button asChild variant="outline" className="border-terminal text-terminal hover:bg-terminal/10 font-mono font-bold px-8 rounded-full transition-all group">
+                <Button asChild variant="outline" className="border-terminal text-terminal hover:bg-terminal/10 font-mono font-bold px-8 rounded-full transition-all group active:scale-95">
                     <a href="/Ryan_Musuka_CV.pdf" download="Ryan_Musuka_CV.pdf">
                     Download My Resume
                     </a>

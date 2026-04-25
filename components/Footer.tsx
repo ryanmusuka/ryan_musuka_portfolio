@@ -24,15 +24,15 @@ export default function Footer() {
 
           <div className="space-y-2 font-medium text-slate-300 font-mono text-sm">
             <a 
-              href="mailto:musuka.ryan@gmail.com" 
-              className="block hover:text-accent transition-colors duration-300 flex items-center group"
+              href="mailto:musuka.ryan@gmail.com"
+              className="block hover:text-accent active:scale-95 transition-colors duration-300 flex items-center group"
             >
               musuka.ryan@gmail.com
             </a>
 
             <a 
               href="tel:+263786505496" 
-              className="block hover:text-accent transition-colors duration-300 flex items-center group"
+              className="block hover:text-accent active:scale-95 transition-colors duration-300 flex items-center group"
             >
               +263 78 650 5496
             </a>
@@ -50,7 +50,7 @@ export default function Footer() {
             <Link
               key={route.href}
               href={route.href}
-              className="text-slate-300 hover:text-accent active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit gap-1">
+              className="text-slate-300 hover:text-accent active:scale-95 active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit gap-1">
               {route.name}
             </Link>
           ))}
@@ -59,20 +59,20 @@ export default function Footer() {
         {/* Column 3: Socials */}
         <div className="flex flex-col space-y-3 gap-1">
           <h4 className="font-black text-lg uppercase tracking-widest text-slate-500 mb-2">Connect</h4>
-          <Link href="https://www.linkedin.com/in/ryan-musuka" target="_blank" className="text-slate-300 hover:text-accent active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
+          <Link href="https://www.linkedin.com/in/ryan-musuka" target="_blank" className="text-slate-300 hover:text-accent active:scale-95 active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
             LinkedIn
           </Link>
-          <Link href="https://github.com/ryanmusuka" target="_blank" className="text-slate-300 hover:text-accent active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
+          <Link href="https://github.com/ryanmusuka" target="_blank" className="text-slate-300 hover:text-accent active:scale-95 active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
             GitHub
           </Link>
-          <Link href="https://wa.me/263786505496" target="_blank" className="text-slate-300 hover:text-accent active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
+          <Link href="https://wa.me/263786505496" target="_blank" className="text-slate-300 hover:text-accent active:scale-95 active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
             WhatsApp
           </Link>
         </div>
       </div>
 
       {/* Terminal Divider & Copyright */}
-      <Link href="https://www.linkedin.com/in/ryan-musuka" target="_blank" className="text-slate-300 hover:text-accent active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
+      <Link href="https://www.linkedin.com/in/ryan-musuka" target="_blank" className="text-slate-300 hover:text-accent active:scale-95 active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
         <div className="container mx-auto max-w-7xl mt-12 border-t border-dashed border-slate-800 flex flex-col md:flex-row justify-center items-center gap-2 text-xs text-slate-500 font-medium text-center">
           <p>
             Portfolio &copy; {currentYear}

@@ -35,7 +35,7 @@ export default function Navbar() {
             <Link
               key={route.href}
               href={route.href}
-              className="text-sm font-mono font-bold uppercase tracking-widest text-secondary transition-colors hover:text-terminal"
+              className="text-sm font-mono font-bold uppercase tracking-widest text-secondary transition-colors hover:text-terminal active:scale-95 active:text-green-500 w-fit flex items-center gap-1"
             >
               <span className="text-slate-600 mr-1">&gt;</span>
               {route.name}
