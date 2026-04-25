@@ -118,7 +118,7 @@ export default function TechStack() {
           >
             <div className="flex items-center space-x-3 mb-6">
               <Cloud className="w-5 h-5 text-accent" />
-              <h3 className="text-xl font-mono font-bold text-white">Oracle Cloud Certifications</h3>
+              <h3 className="text-xl font-mono font-bold text-white">Certifications</h3>
             </div>
             
             {/* Generative AI Prof */}
@@ -129,7 +129,7 @@ export default function TechStack() {
             className="group/cert flex flex-col p-4 rounded-xl bg-slate-900/50 border border-slate-800 border-l-2 border-l-accent hover:bg-accent/10 hover:border-slate-700 transition-all duration-300 cursor-pointer"
             >
             <span className="text-xs font-mono text-slate-400 mb-1 group-hover/cert:text-accent transition-colors duration-300">
-                2025 Certified
+                Oracle Cloud Infrastructure 2025 Certified
             </span>
             <span className="text-sm md:text-base font-bold text-slate-200 group-hover/cert:text-white transition-colors duration-300">
                 Generative AI Professional
@@ -144,7 +144,7 @@ export default function TechStack() {
             className="group/cert flex flex-col p-4 rounded-xl bg-slate-900/50 border border-slate-800 border-l-2 border-l-accent hover:bg-accent/10 hover:border-slate-700 transition-all duration-300 cursor-pointer"
             >
             <span className="text-xs font-mono text-slate-400 mb-1 group-hover/cert:text-accent transition-colors duration-300">
-                2025 Certified
+                Oracle Cloud Infrastructure 2025 Certified
             </span>
             <span className="text-sm md:text-base font-bold text-slate-200 group-hover/cert:text-white transition-colors duration-300">
                 AI Foundations Associate
@@ -159,10 +159,24 @@ export default function TechStack() {
             className="group/cert flex flex-col p-4 rounded-xl bg-slate-900/50 border border-slate-800 border-l-2 border-l-accent sm:col-span-2 hover:bg-accent/10 hover:border-slate-700 transition-all duration-300 cursor-pointer active:scale-95"
             >
             <span className="text-xs font-mono text-slate-400 mb-1 group-hover/cert:text-accent transition-colors duration-300">
-                2025 Certified
+                Oracle Cloud Infrastructure 2025 Certified
             </span>
             <span className="text-sm md:text-base font-bold text-slate-200 group-hover/cert:text-white transition-colors duration-300">
-                Cloud Infrastructure Foundations Associate
+                Foundations Associate
+            </span>
+            </a>
+
+            {/* GCI Data Science */}
+            <a 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/cert flex flex-col p-4 rounded-xl bg-slate-900/50 border border-slate-800 border-l-2 border-l-accent sm:col-span-2 hover:bg-accent/10 hover:border-slate-700 transition-all duration-300 cursor-pointer active:scale-95"
+            >
+            <span className="text-xs font-mono text-slate-400 mb-1 group-hover/cert:text-accent transition-colors duration-300">
+                In progres - expected July 2026
+            </span>
+            <span className="text-sm md:text-base font-bold text-slate-200 group-hover/cert:text-white transition-colors duration-300">
+                GCI Data Science Course | Matsuo Lab, University of Tokyo
             </span>
             </a>
 
