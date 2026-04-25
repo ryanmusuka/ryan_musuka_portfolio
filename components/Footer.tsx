@@ -4,10 +4,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const routes = [
-    { name: "Home", href: "/" },
-    { name: "Projects", href: "#projects" },
-    { name: "Tech Stack", href: "#stack" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#hero" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Tech Stack", href: "/#stack" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -21,8 +21,25 @@ export default function Footer() {
                 RM<span className="text-accent animate-pulse">_</span>
             </span>
           </Link>
-          <div className="space-y-1 font-medium text-slate-300">
-            <p>musuka.ryan@gmail.com<br></br>+263 78 650 5496<br></br>Harare, Zimbabwe</p>
+
+          <div className="space-y-2 font-medium text-slate-300 font-mono text-sm">
+            <a 
+              href="mailto:musuka.ryan@gmail.com" 
+              className="block hover:text-accent transition-colors duration-300 flex items-center group"
+            >
+              musuka.ryan@gmail.com
+            </a>
+
+            <a 
+              href="tel:+263786505496" 
+              className="block hover:text-accent transition-colors duration-300 flex items-center group"
+            >
+              +263 78 650 5496
+            </a>
+
+            <div className="flex items-center text-slate-300">
+              Harare, Zimbabwe
+            </div>
           </div>
         </div>
 
@@ -55,15 +72,17 @@ export default function Footer() {
       </div>
 
       {/* Terminal Divider & Copyright */}
-      <div className="container mx-auto max-w-7xl mt-12 border-t border-dashed border-slate-800 flex flex-col md:flex-row justify-center items-center gap-2 text-xs text-slate-500 font-medium text-center">
-        <p>
-          Portfolio &copy; {currentYear}
-        </p>
-        <span className="hidden md:inline text-slate-700">|</span>
-        <p>
-          Engineered by <span className="text-slate-300">Ryan Musuka</span> using Next.js, TypeScript, & Tailwind CSS.
-        </p>
-      </div>
+      <Link href="https://www.linkedin.com/in/ryan-musuka" target="_blank" className="text-slate-300 hover:text-accent active:text-green-500 text-medium font-medium tracking-wider uppercase transition-colors w-fit">
+        <div className="container mx-auto max-w-7xl mt-12 border-t border-dashed border-slate-800 flex flex-col md:flex-row justify-center items-center gap-2 text-xs text-slate-500 font-medium text-center">
+          <p>
+            Portfolio &copy; {currentYear}
+          </p>
+          <span className="hidden md:inline text-slate-700">|</span>
+          <p>
+            Engineered by <span className="text-slate-300">Ryan Musuka</span> using Next.js, TypeScript, & Tailwind CSS.
+          </p>
+        </div>
+      </Link>
     </footer>
   );
 }

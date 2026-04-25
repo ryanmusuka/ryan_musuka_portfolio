@@ -27,7 +27,7 @@ const technologies = {
 
 export default function TechStack() {
   return (
-    <section id="stack" className="w-full scroll-mt-20 container mx-auto px-4 sm:px-6 lg:px-8 py-1 relative z-10">
+    <section id="stack" className="w-full scroll-mt-20 container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-8 relative z-10">
       <motion.div 
         className="max-w-6xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
@@ -67,7 +67,7 @@ export default function TechStack() {
             </div>
           </motion.div>
 
-          {/* BOX 3: Frontend Ecosystem */}
+          {/* BOX 2: Frontend Ecosystem */}
           <motion.div 
             className="relative p-6 md:p-8 rounded-2xl bg-[#0f172a]/80 border border-slate-800 backdrop-blur-sm group hover:border-accent/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(234,88,12,0.15)]"
             whileHover={{ y: -5 }}
@@ -76,7 +76,7 @@ export default function TechStack() {
               <Code2 className="w-5 h-5 text-accent" />
               <h3 className="text-xl font-mono font-bold text-white">Frontend Ecosystem</h3>
             </div>
-            {/* Inner Icon Grid: 3 columns on mobile, 3 on larger screens */}
+            {/* Inner Icon Grid */}
             <div className="grid grid-cols-3 gap-y-6 gap-x-2">
               {technologies.frontend.map((tech) => (
                 <div key={tech.name} className="flex flex-col items-center justify-center space-y-2">
@@ -170,6 +170,9 @@ export default function TechStack() {
           </motion.div>
 
         </div>
+        {/* Subtle Accent Line */}
+        <div className="mt-10 h-1 w-24 bg-gradient-to-r from-accent to-transparent rounded-full" />
+       
       </motion.div>
     </section>
   );

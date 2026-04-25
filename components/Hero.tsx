@@ -19,14 +19,13 @@ export default function Hero() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Typewriter Effect Logic (Refactored for strict React lifecycle management)
+  // Typewriter Effect Logic 
   useEffect(() => {
     const currentFullRole = rotatingRoles[roleIndex];
     const typingSpeed = isDeleting ? 50 : 100; 
 
     if (!isDeleting && text === currentFullRole) {
-      // Pause at the end of the word before deleting
-      const pause = setTimeout(() => setIsDeleting(true), 2000);
+      const pause = setTimeout(() => setIsDeleting(true), 777);
       return () => clearTimeout(pause);
     }
 
@@ -67,10 +66,10 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="flex flex-col scroll-mt-24 items-center justify-center gap-6 max-w-3xl mx-auto px-4 py-12 text-center"
+      className="flex flex-col scroll-mt-24 items-center justify-center gap-6 max-w-3xl mx-auto px-4 py-8 text-center"
       >
       
-      {/* Left Column: Information & CTAs */}
+      { /* Information & CTAs */ }
       <motion.div 
         className="flex-1 flex flex-col items-center md:items-center text-center space-y-6 max-w-2xl order-2 md:order-1"
         variants={containerVariants}
@@ -78,7 +77,6 @@ export default function Hero() {
         animate="visible"
       >
 
-        {/* Core Identity */}
         <div className="space-y-2 justify center md:justify-center">
           <motion.h2 variants={itemVariants} className="font-mono text-terminal font-semibold tracking-widest uppercase text-sm sm:text-base flex items-center self-start">
             <Terminal className="w-4 h-4 mr-2" />
@@ -91,23 +89,20 @@ export default function Hero() {
           
           {/* Dynamic Typewriter Subtitle */}
           <motion.div variants={itemVariants} className="h-10 sm:h-12 flex items-center justify-center w-full min-w-[280px]">
-            <h3 className="text-2xl sm:text-3xl font-mono text-secondary/80 font-medium flex items-center">
-              <span className="text-slate-700 mr-3">{ }</span>
+            <h3 className="text-xl sm:text-3xl font-mono text-secondary/80 font-medium flex items-center">
               {text}
               <span className="animate-[pulse_0.8s_ease-in-out_infinite] ml-1 text-terminal">_</span>
             </h3>
           </motion.div>
         </div>
 
-        {/* Professional Summary */}
         <motion.p variants={itemVariants} className="text-base sm:text-lg text-slate-400 max-w-xl leading-relaxed">
-            I architect high-performance, secure software systems. Certified in Oracle Cloud
-            Infrastructure and Generative AI, with real-world projects under my belt, and currently
-            deepening my craft across Next.js, TypeScript, PostgreSQL, and Cloud infrastructure,
+            Passionate Computer Science student with real-world projects under my belt. Certified in Oracle Cloud 
+            Infrastructure and Generative AI, and currently
+            deepening my craft across AI, Full-stack Develoopment and Cloud Infrastructure,
             one commit at a time!
         </motion.p>
 
-        {/* The "Neon Status" Badge */}
         <motion.div variants={itemVariants} className="inline-flex items-center space-x-2 bg-slate-900/50 border border-slate-800 rounded-full px-4 py-1.5 shadow-[0_0_10px_rgba(34,197,94,0.05)]">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-terminal opacity-75"></span>
@@ -134,11 +129,8 @@ export default function Hero() {
                 </Button>
             </motion.div>
         </div>
+        
       </motion.div>
-
-
-     
-
     </section>
   );
 }

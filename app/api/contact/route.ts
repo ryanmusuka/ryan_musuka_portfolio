@@ -21,7 +21,6 @@ export async function POST(request: Request) {
       },
     });
 
-    // Construct the email payload
     const mailOptions = {
       from: process.env.EMAIL_USER, 
       to: process.env.EMAIL_USER,  

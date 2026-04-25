@@ -2,7 +2,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { User } from "lucide-react";
 import Image from "next/image";
 
 const ProfileVisual = ({ className = "" }: { className?: string }) => (
@@ -32,9 +31,9 @@ export default function About() {
   return (
     <section 
       id="about" 
-      className="w-full container scroll-mt-20 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10"
+      className="w-full container scroll-mt-20 mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-8 relative z-10"
     >
-      {/* The Flex Parent:  */}
+      
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
         
         {/* LEFT COLUMN: Narrative & Header */}
@@ -45,20 +44,20 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          {/* Section Header */}
+
           <div className="flex items-center space-x-3 mb-8">
             <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight font-mono uppercase">
               About<span className="text-accent">Me</span>
             </h2>
           </div>
 
-          {/* MOBILE ONLY IMAGE: Renders just under the header, hidden on Desktop */}
+          {/* The Container for the Narrative & Profile Visual */}
           <ProfileVisual className="lg:hidden mb-8 justify center" />
 
           {/* The Narrative Content */}
           <article className="space-y-6 text-base md:text-lg text-slate-300 leading-relaxed font-sans w-full">
             <p>
-              I am a Computer Science student at NUST Zimbabwe, completing my second year with a deep-rooted passion for building resilient systems on the internet.
+              I am a Computer Science student at NUST Zimbabwe, completing my second year with a deep-rooted passion for building resilient systems.
             </p>
             <p>
               So far, I have shipped a production media platform (LaughNewsWorld), led a 10-person IoT engineering team to build a smart irrigation system (Hydro-Smart), and prototyped two future enterprise systems; an offline-first traffic enforcement application for active-duty police officers (Zentinel) and an enterprise visitor management platform (SentriHawk). Each of these systems taught me crucial lessons about database design, payload optimization, and real-world network constraints that the classroom simply cannot simulate.
@@ -74,7 +73,6 @@ export default function About() {
             </p>
           </article>
 
-          {/* Sub-accent aesthetic detail */}
           <div className="mt-10 h-1 w-24 bg-gradient-to-r from-accent to-transparent rounded-full" />
         </motion.div>
 

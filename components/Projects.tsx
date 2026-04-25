@@ -108,7 +108,7 @@ const projects = [
   }
 ];
 
-// 2. THE PARSER: Converts [[Text]] into neon highlighted spans
+// Converts [[Text]] into neon highlighted spans
 const renderWithHighlight = (text: string) => {
   const parts = text.split(/\[\[(.*?)\]\]/g);
   return parts.map((part, i) => {
@@ -137,7 +137,7 @@ export default function Projects() {
   }, [selectedProject]);
 
   return (
-    <section id="projects" className="w-full container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section id="projects" className="w-full container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-8">
       <motion.div 
         className="max-w-6xl mx-auto flex flex-col items-start relative z-10"
         initial={{ opacity: 0, y: 30 }}
@@ -188,9 +188,11 @@ export default function Projects() {
             </motion.div>
           ))}
         </div>
+        <div className="mt-10 h-1 w-24 bg-gradient-to-r from-accent to-transparent rounded-full" />
+       
       </motion.div>
 
-      {/* THE MODAL - Upgraded z-index and explicit pointer events */}
+      {/* THE MODAL */}
       <AnimatePresence>
         {selectedProject && (
           <motion.div 
@@ -235,14 +237,13 @@ export default function Projects() {
                   </p>
                 </div>
                
-                {/* Split Layout: Features (Left) & Achievements (Right) */}
+                {/* Features (Left) & Achievements (Right) */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   
                   {/* Key Features / Role */}
                     <div className="bg-[#0f172a] p-5 rounded-xl border border-slate-800">
                     <h4 className="text-sm font-mono text-accent uppercase tracking-widest mb-4 flex items-center">
                         <ChevronRight className="w-4 h-4 mr-1" /> 
-                        {/* Safely injects the label from data, falls back if missing */}
                         {selectedProject.featuresLabel || "Core Features"}
                     </h4>
                     <ul className="space-y-3">
@@ -265,7 +266,6 @@ export default function Projects() {
                         <li key={idx} className="flex items-start text-slate-300 text-sm">
                           <span className="text-terminal mr-2 mt-0.5">▹</span>
                           <span className="leading-relaxed">
-                            {/* Run the string through our neon parser */}
                             {renderWithHighlight(achievement)}
                           </span>
                         </li>
@@ -273,7 +273,7 @@ export default function Projects() {
                     </ul>
                   </div>
 
-                {/* NEW: Modal Tech Stack Rendering */}
+                {/* Modal Tech Stack Rendering */}
                     <h4 className="text-sm font-mono text-slate-500 uppercase tracking-widest mb-3">Architecture Stack</h4>
                     <div className="flex flex-wrap gap-2">
                     {selectedProject.stack.map((tech) => (
