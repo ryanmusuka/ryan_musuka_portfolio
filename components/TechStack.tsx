@@ -173,7 +173,7 @@ export default function TechStack() {
             className="group/cert flex flex-col p-4 rounded-xl bg-slate-900/50 border border-slate-800 border-l-2 border-l-accent sm:col-span-2 hover:bg-accent/10 hover:border-slate-700 transition-all duration-300 cursor-pointer active:scale-95"
             >
             <span className="text-xs font-mono text-slate-400 mb-1 group-hover/cert:text-accent transition-colors duration-300">
-                In progres - expected July 2026
+                In progress - expected July 2026
             </span>
             <span className="text-sm md:text-base font-bold text-slate-200 group-hover/cert:text-white transition-colors duration-300">
                 GCI Data Science Course | Matsuo Lab, University of Tokyo
