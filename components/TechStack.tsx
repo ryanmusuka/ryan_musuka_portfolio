@@ -134,7 +134,7 @@ export default function TechStack() {
             <span className="text-sm md:text-base font-bold text-slate-200 group-hover/cert:text-white transition-colors duration-300">
                 Generative AI Professional
             </span>
-            </a>
+            </a> 
 
             {/* AI Foundations */}
             <a 

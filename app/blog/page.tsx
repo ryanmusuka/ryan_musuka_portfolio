@@ -69,8 +69,6 @@ export default function BlogLandingPage() {
     post.category.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // ---------------------------------------------------------------------------
-
   if (loading) {
     return (
       <div className="min-h-screen bg-[#0f172a] flex flex-col items-center justify-center relative z-10">
@@ -135,7 +133,7 @@ export default function BlogLandingPage() {
                 <Link href={`/blog/${featuredPost.id}`} className="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900/40 border border-slate-800 rounded-2xl p-4 md:p-6 hover:border-accent/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(234,88,12,0.1)]">
                   
                   {/* Image Container */}
-                  <div className="lg:col-span-7 overflow-hidden rounded-xl aspect-[2/1] lg:aspect-video relative border border-slate-800">
+                  <div className="lg:col-span-7 overflow-hidden rounded-xl aspect-[2/1] lg:aspect-video active:scale-95 relative border border-slate-800">
                     <img 
                       src={featuredPost.image} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" 
