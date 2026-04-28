@@ -46,7 +46,7 @@ export default async function BlogPost({
         {/* Navigation */}
         <Link 
           href="/blog" 
-          className="group flex items-center gap-2 text-[#ea580c] mb-12 hover:translate-x-[-4px] hover:text-terminal transition-transform duration-300 w-fit"
+          className="group flex items-center gap-2 text-[#ea580c] mb-12 hover:translate-x-[-4px] hover:text-terminal active:scale-95 transition-transform duration-300 w-fit"
         >
           <ArrowLeft size={18} />
           <span className="uppercase tracking-tighter text-sm">Back</span>

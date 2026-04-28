@@ -99,7 +99,7 @@ export default function Hero() {
         <motion.p variants={itemVariants} className="text-base sm:text-lg text-slate-400 max-w-xl leading-relaxed">
             Passionate Computer Science student with real-world projects under my belt. Certified in Oracle Cloud 
             Infrastructure and Generative AI, and currently
-            deepening my craft across AI, Full-stack Develoopment and Cloud Infrastructure,
+            deepening my craft across AI, Full-stack Development and Cloud Infrastructure,
             one commit at a time!
         </motion.p>
 
