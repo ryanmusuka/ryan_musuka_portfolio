@@ -103,7 +103,7 @@ const projects = [
       "Mitigated significant hardware failure risks during the deployment of a high-voltage relay system.",
       "Enforced strict IEEE software engineering standards as the technical documentation gatekeeper."
     ],
-    demoLink: "https://drive.google.com/drive/u/0/folders/10F5zX2WQkD1nHPUXRCkL0OAivuiGjjjo", 
+    demoLink: "https://drive.google.com/file/d/1A57LSYwHCl-ysXCoMjBm_vL0YLWb4dtB/view?usp=drive_link", 
     repoLink: "https://drive.google.com/drive/u/0/folders/1TfgOjq62G3j7eVsF8hpoWS1rdbKXYC7w",
   }
 ];
